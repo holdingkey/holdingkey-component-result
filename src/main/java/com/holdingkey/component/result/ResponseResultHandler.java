@@ -1,6 +1,7 @@
 package com.holdingkey.component.result;
 
 import com.alibaba.fastjson.JSON;
+import jakarta.servlet.ServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanInstantiationException;
@@ -17,8 +18,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
-
-import javax.servlet.ServletRequest;
 
 /**
  * 业务接口回参处理拦截器
